@@ -1,0 +1,22 @@
+{
+    "name": "rafalotech/robovoucher",
+    "description": "Online voucher market",
+    "type": "wordpress-plugin",
+    "license": "GPL v2",
+    "authors": [
+        {
+            "name": "Rafalo tech",
+            "email": "nuraalamrifat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "robo\\": "./includes"
+        },
+        "files": [
+            "./includes/functions.php"
+        ]
+    }
+}

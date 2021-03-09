@@ -1,0 +1,92 @@
+.menu-item-47 a {
+    background-color: #0092e3;
+    border: 1px solid #0092e3;
+}
+.menu-item-46 a {
+    background-color: transparent;
+    border: 1px solid white;
+}
+.menu-item-47 a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+.menu-item-46 a:hover {
+    background-color: white !important;
+    color: black !important;
+}
+.robo-main-menu nav > ul > li > a {
+    border-radius: 25px;
+    /* height: 32px; */
+    padding: 0 22px;
+}
+.robo-home-accordion .elementor-tab-title.elementor-active {
+    background-color: #0081c8 !important;
+}
+
+/* BG svg styles */
+.svg-intro-bottom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Nav menus */
+.robo-footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+.robo-footer-nav ul a {
+    color: #838383;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.robo-footer-nav ul a:hover {
+    color: black;
+}
+
+/* Sponsor */
+.sponsor-card:hover .sponsor-country * {
+    color: white !important;
+}
+
+/* Pot */
+
+/* Floating nav */
+/* Header */
+.robo-floating-nav {
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 0 0 5px 1px #ccc;
+    position: fixed;
+    width: 100%;
+}
+
+.robo-floating-nav .menu-item-34 a,
+.robo-floating-nav .menu-item-45 a {
+    color: black !important;
+}
+
+.robo-floating-nav .menu-item-47 a {
+    background-color: #0092e3;
+    border: 1px solid #0092e3;
+    color: white !important;
+}
+.robo-floating-nav .menu-item-47 a:hover {
+    background-color: #0073b0;
+}
+.robo-floating-nav .menu-item-46 a {
+    background-color: #3cce90;
+    border: 1px solid #3cce90;
+    color: white !important;
+}
+.robo-floating-nav .menu-item-46 a:hover {
+    background-color: #2cad76 !important;
+}
+
+#masthead {
+    z-index: 9999!important;
+}
