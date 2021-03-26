@@ -1,6 +1,11 @@
 <?php
 
 namespace robo\Widgets\Items\Elementor;
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 use Elementor\Controls_Manager as Controls;
 use Elementor\Widget_Base as Base;
 
@@ -188,8 +193,7 @@ class Button extends Base {
                 'selectors'       => [
                     '{{WRAPPER}}' => 'text-align: {{VALUE}}',
                 ],
-            ],
-
+            ]
         );
 
         $this->add_responsive_control(

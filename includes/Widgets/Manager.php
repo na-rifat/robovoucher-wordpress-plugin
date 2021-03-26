@@ -2,6 +2,9 @@
 
 namespace robo\Widgets;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 
 /**
  * Manages Widgets
@@ -13,8 +16,7 @@ class Manager {
         add_action( 'elementor/elements/categories_registered', [$this, 'register_elementor_categories'] );
     }
 
-    
-    public function register(){
+    public function register() {
 
     }
 

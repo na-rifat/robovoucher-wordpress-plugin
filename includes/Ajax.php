@@ -2,19 +2,22 @@
 
 namespace robo;
 
-class Ajax{
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 
-    function __construct()
-    {
-        
+class Ajax {
+
+    function __construct() {
+
     }
 
     /**
-     * 
+     *
      *
      * @return void
      */
-    public function init(){
-        
+    public function init() {
+
     }
 }

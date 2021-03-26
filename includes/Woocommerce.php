@@ -2,6 +2,9 @@
 
 namespace robo;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 /**
  * Integration between woocommerce and robo voucher
  */
@@ -20,17 +23,17 @@ class Woocommerce {
     public function product_fields() {
         global $post;
 
-        $product = wc_get_product( $post->ID );        
-        woocommerce_form_field(
-            'expire-date',
-            [
-                'type'        => 'date',
-                'label'       => __( 'Expires at', 'robo' ),
-                'description' => __( 'Enter a date to be expired', 'robo' ),
-                'class'       => ['robo-wc-input-field'],
-            ],
-            $product->get_meta( 'expire-date' )
-        );
+        $product = wc_get_product( $post->ID );
+        // woocommerce_form_field(
+        //     'expire-date',
+        //     [
+        //         'type'        => 'date',
+        //         'label'       => __( 'Expires at', 'robo' ),
+        //         'description' => __( 'Enter a date to be expired', 'robo' ),
+        //         'class'       => ['robo-wc-input-field'],
+        //     ],
+        //     $product->get_meta( 'expire-date' )
+        // );
 
         woocommerce_wp_textarea_input(
             [
@@ -53,12 +56,11 @@ class Woocommerce {
                 'description' => __( 'Conditions to display', 'robo' ),
                 'desc_tip'    => true,
             ]
-        );        
+        );
     }
 
-    public function save_meta($post_id){
-        $product = wc_get_product($post_id);
-        
+    public function save_meta( $post_id ) {
+        $product = wc_get_product( $post_id );
 
         // $product->update_meta_data('');
     }

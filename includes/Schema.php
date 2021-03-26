@@ -1,6 +1,10 @@
 <?php
 namespace robo;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 class Schema {
     const prefix     = 'robo';
     const data_types = [

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
     // namespace robo;
     /**
      * This files contains all important functions for robo wp plugin

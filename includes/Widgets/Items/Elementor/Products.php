@@ -1,6 +1,11 @@
 <?php
 
 namespace robo\Widgets\Items\Elementor;
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 use Elementor\Controls_Manager as Controls;
 use Elementor\Widget_Base as Base;
 
@@ -45,6 +50,9 @@ class Products extends Base {
             global $product;
             $pro = wc_get_product( get_the_ID() );
 
+            var_dump( $pro );
+            return;
+
             $img              = sprintf( '<img src="%s" />', get_the_post_thumbnail_url( get_the_ID() ) );
             $title            = sprintf( '<h3>%s</h3>', get_the_title() );
             $description      = sprintf( '<p>%s</p>', $pro->get_description() );
@@ -53,11 +61,11 @@ class Products extends Base {
             $more_info_button = sprintf( '<a class="robo-more-info" href="%s"><i class="fas fa-chevron-right"></i>More info</a>', get_permalink( get_the_ID() ) );
 
             $parent = sprintf( '<div class="robo-product-row">
-			                        <div class="robo-col-1">%s</div>
-			                        <div class="robo-col-2">%s %s</div>
-			                        <div class="robo-col-3">%s <div class="robo-products-list-action-button">%s %s</div></div>
-			                        </div>',
-                $img,  
+				                        <div class="robo-col-1">%s</div>
+				                        <div class="robo-col-2">%s %s</div>
+				                        <div class="robo-col-3">%s <div class="robo-products-list-action-button">%s %s</div></div>
+				                        </div>',
+                $img,
                 $title,
                 $description,
                 $price,

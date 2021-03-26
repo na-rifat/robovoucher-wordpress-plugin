@@ -1,10 +1,13 @@
 <?php
 namespace robo\Admin;
 
-class Admin{
-    function __construct()
-    {
-        
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
+class Admin {
+    function __construct() {
+
     }
 
     /**
@@ -12,7 +15,7 @@ class Admin{
      *
      * @return void
      */
-    public function init(){
+    public function init() {
 
     }
 }

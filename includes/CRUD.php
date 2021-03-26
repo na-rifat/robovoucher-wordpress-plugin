@@ -2,6 +2,10 @@
 
 namespace robo;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 class CRUD {
     function __construct() {
 

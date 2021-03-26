@@ -2,6 +2,10 @@
 
 namespace robo\Frontend;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 class Frontend {
     function __construct() {
 

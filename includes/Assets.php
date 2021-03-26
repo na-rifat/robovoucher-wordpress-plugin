@@ -2,6 +2,10 @@
 
 namespace robo;
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 /**
  * Registers essential assets
  */
